@@ -4,7 +4,11 @@
     <script src="path/to/blocksdk.js"></script>
     <script>
       var sdk = new window.sfdc.BlockSDK();
-      // do something with the sdk
+      sdk.getContent(function (content) {
+      content += '.';
+      sdk.setContent(content, function (setContent) {
+  });
+});
     </script>
   </body>
 </html>
